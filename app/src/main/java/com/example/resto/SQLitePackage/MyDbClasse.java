@@ -4,15 +4,13 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.util.Log;
 import android.widget.Toast;
 
 import com.example.resto.Commande;
 import com.example.resto.Produit;
-import com.example.resto.User;
+import com.example.resto.bd.User;
 import com.readystatesoftware.sqliteasset.SQLiteAssetHelper;
 
-import java.lang.reflect.Array;
 import java.text.DateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -179,11 +177,7 @@ public class MyDbClasse extends SQLiteAssetHelper {
                         String nom = objCursor.getString(1);
                         String mdp = objCursor.getString(2);
                         String type = objCursor.getString(3);
-                        objDbModelClassArrayList.add(
-                                new User(
-                                        id, nom, mdp, type
-                                        )
-                                );
+                        objDbModelClassArrayList.add(new User());
                             }
                     return objDbModelClassArrayList;
                 } else {

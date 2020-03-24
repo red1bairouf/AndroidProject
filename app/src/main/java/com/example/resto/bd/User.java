@@ -1,18 +1,20 @@
-package com.example.resto;
+package com.example.resto.bd;
 
+import androidx.annotation.NonNull;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
+@Entity(tableName = "users")
 public class User {
-    private int id;
-    private String nom;
-    private String mdp;
-    private String type;
+    @PrimaryKey
+    @NonNull
+    public int id;
+    public String nom;
+    public String mdp;
+    public String type;
 
-    public User(int id, String name, String mdp, String type){
-        this.id=id;
-        this.nom=name;
-        this.mdp=mdp;
-        this.type=type;
-    }
 
+    @NonNull
     public int getId() {
         return id;
     }
@@ -20,7 +22,7 @@ public class User {
     public void setId(int id) {
         this.id = id;
     }
-
+    @NonNull
     public String getNom() {
         return nom;
     }
