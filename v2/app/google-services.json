@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "994222549656",
+    "firebase_url": "https://projetandroid-43626.firebaseio.com",
+    "project_id": "projetandroid-43626",
+    "storage_bucket": "projetandroid-43626.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:994222549656:android:4e67b864b5b2db61a8feed",
+        "android_client_info": {
+          "package_name": "com.ensias.ProjetAndroid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "994222549656-a7ethjuvvvv9gjvr50gtqe53m05ip4nt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARR9YhmKfcsJANptMlmZwDAniuy5plbOw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "994222549656-a7ethjuvvvv9gjvr50gtqe53m05ip4nt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
