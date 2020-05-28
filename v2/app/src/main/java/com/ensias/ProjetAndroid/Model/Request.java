@@ -20,7 +20,7 @@ public class Request {
         this.address = address;
         this.total = total;
         this.foods = foods;
-        this.status = "0";
+        this.status = "0"; // 0 place 1 shipping 2 shipped
     }
 
     public String getStatus() {
