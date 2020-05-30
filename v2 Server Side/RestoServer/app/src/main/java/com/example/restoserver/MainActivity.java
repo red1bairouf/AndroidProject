@@ -8,10 +8,17 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.restoserver.Model.Category;
+import com.example.restoserver.ViewHolder.MenuViewHolder;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 public class MainActivity extends AppCompatActivity {
 
     Button btnSignIn;
     TextView txtslogan;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

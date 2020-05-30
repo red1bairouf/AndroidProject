@@ -1,10 +1,10 @@
 package com.example.restoserver.Model;
 
 public class User {
-    private String Nama, Password, IsStaff, Phone;
+    private String Name, Password, IsStaff, Phone;
 
-    public User(String nama, String password) {
-        Nama = nama;
+    public User(String name, String password) {
+        Name = name;
         Password = password;
     }
 
@@ -12,12 +12,12 @@ public class User {
 
     }
 
-    public String getNama() {
-        return Nama;
+    public String getName() {
+        return Name;
     }
 
-    public void setNama(String nama) {
-        Nama = nama;
+    public void setName(String name) {
+        Name = name;
     }
 
     public String getPassword() {
