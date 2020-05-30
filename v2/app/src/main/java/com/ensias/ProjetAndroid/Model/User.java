@@ -4,6 +4,17 @@ public class User {
     private String Name;
     private String Password;
     private String Phone;
+    private String isStaff;
+
+    public String getIsStaff() {
+        return isStaff;
+    }
+
+    public void setIsStaff(String isStaff) {
+        this.isStaff = isStaff;
+    }
+
+
 
     public User() {
     }
@@ -12,7 +23,9 @@ public class User {
         Name = name;
         Password = password;
         Phone = phone;
+        isStaff = "false";
     }
+
 
     public User(String name, String password) {
         Name = name;
