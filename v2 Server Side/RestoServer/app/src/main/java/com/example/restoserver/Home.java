@@ -323,8 +323,11 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
             Intent order = new Intent(Home.this,OrderStatus.class);
             startActivity(order);
         }
+        if (id == R.id.nav_sign_out) {
+            Intent order = new Intent(this, SignIn.class);
+            startActivity(order);
 
-
+        }
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
