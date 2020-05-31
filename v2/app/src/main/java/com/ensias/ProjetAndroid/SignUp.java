@@ -37,10 +37,10 @@ public class SignUp extends AppCompatActivity {
                 final ProgressDialog mdialog = new ProgressDialog(SignUp.this);
                 mdialog.setMessage("Please Waiting...");
                 mdialog.show();
-                table_user.addValueEventListener(new ValueEventListener() {
+                table_user.addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(DataSnapshot dataSnapshot) {
-                        if (dataSnapshot .child(edtName.getText().toString()).exists()){
+                        if (dataSnapshot .child(edtPhone.getText().toString()).exists()){
                             mdialog.dismiss();
                             Toast.makeText(SignUp.this, "Phone number already register ", Toast.LENGTH_SHORT).show();
                         }else {
