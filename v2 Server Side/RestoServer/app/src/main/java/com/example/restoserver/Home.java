@@ -325,6 +325,7 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
         }
 
 
+
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
