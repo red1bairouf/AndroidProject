@@ -258,6 +258,16 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
                 Picasso.with(Home.this).load(model.getImage())
                         .into(viewHolder.imageView);
 
+                viewHolder.setItemClickListener(new ItemClickListener() {
+                    @Override
+                    public void onClick(View view, int position, boolean isLongClik) {
+                        // send Category Id and start new activity
+                        Intent foodList = new Intent(Home.this, FoodList.class);
+                        foodList.putExtra("CategoryId",adapter.getRef(position).getKey());
+                        startActivity(foodList);
+                    }
+                });
+
 
             }
         };

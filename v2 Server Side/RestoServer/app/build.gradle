@@ -7,7 +7,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.restoserver"
-        minSdkVersion 18
+        minSdkVersion 21
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
@@ -39,7 +39,6 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
 
-
     implementation 'androidx.cardview:cardview:1.0.0'
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
 
@@ -48,7 +47,6 @@ dependencies {
     implementation 'com.google.firebase:firebase-core:12.0.0'
     implementation 'com.google.firebase:firebase-database:12.0.0'
     implementation 'com.rengwuxian.materialedittext:library:2.1.4'
-
 
 
     //tutorial 9 - server 2
@@ -60,5 +58,7 @@ dependencies {
     //Fixed Crash Fbutton
     implementation 'com.github.jd-alexander:android-flat-button:v1.1'
 
+    implementation 'com.github.mancj:MaterialSearchBar:0.7.1'
+    implementation 'com.amulyakhare:com.amulyakhare.textdrawable:1.0.1'
 
 }
