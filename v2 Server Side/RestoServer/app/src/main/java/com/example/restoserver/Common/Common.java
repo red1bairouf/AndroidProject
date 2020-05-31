@@ -8,6 +8,8 @@ import android.graphics.Paint;
 
 import com.example.restoserver.Model.Request;
 import com.example.restoserver.Model.User;
+import com.example.restoserver.Remote.IGeoCoordinates;
+import com.example.restoserver.Remote.RetrofitClient;
 
 
 public class Common {
@@ -28,6 +30,10 @@ public class Common {
             return "On My Way";
         else
             return "Delivered";
+    }
+
+    public static IGeoCoordinates getGeoCodeService() {
+        return RetrofitClient.getClient(baseUrl).create(IGeoCoordinates.class);
     }
 
 
